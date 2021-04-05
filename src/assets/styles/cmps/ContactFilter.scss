@@ -1,0 +1,17 @@
+.contact-page {
+    .contact-filter {
+        input {
+            width: 30rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #354557;
+            font-size: 16px;
+            &:focus {
+                border: 1px #99caff solid;
+            }
+            &::placeholder{
+                color: #777879;
+            }
+        }
+    }
+}

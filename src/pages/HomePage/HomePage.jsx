@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { UserService } from '../../services/UserService';
 import logo from '../../assets/img/coin.svg';
 import { BitcoinService } from '../../services/BitcoinService';
+import { ContactFilter } from '../../components/ContactFilter/ContactFilter';
 // import contactImg from '../../assets/img/contact.svg'
 export class HomePage extends Component {
 
@@ -42,7 +43,7 @@ export class HomePage extends Component {
 
                 <div className="main-container">
                     <div className="bitcoin-rate-container">
-                        <h1> Current Bitcoin Rate: {bitcoinRate}</h1>
+                        <h2> Current Bitcoin Rate: "{bitcoinRate}"</h2>
                     </div>
                 </div>
             </div>

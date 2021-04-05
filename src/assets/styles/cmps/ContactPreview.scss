@@ -1,0 +1,19 @@
+.contact-preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    width: 15rem;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: #f3f3f3;
+    }
+    img {
+        width: 80px;
+        border-radius: 50%;
+        border: 1px solid #b2d8ff;
+    }
+}

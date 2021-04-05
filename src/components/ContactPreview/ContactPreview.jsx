@@ -1,9 +1,11 @@
-export function ContactPreview({ contact, onSelectcontact }) {
-    // return (
-    //   <div className="contact-preview" onClick={() => onSelectcontact(contact._id)}>
-    //     <img src={`https://robohash.org/${contact._id}`} alt="" />
-    //     <p>{contact.model}</p>
-    //     <small>{contact.type}</small>
-    //   </div>
-    // )
-  }
+export function ContactPreview({ contact, onSelectContact }) {
+  return (
+    <li className="contact-preview" onClick={() => onSelectContact(contact._id)}>
+      <img src={`https://robohash.org/${contact._id}?set=set5`} alt="" />
+      <div className="contact-info">
+        <p>{contact.name}</p>
+        <small>{contact.phone}</small>
+      </div>
+    </li>
+  )
+}

@@ -37,13 +37,14 @@ export class HomePage extends Component {
                     <nav className="nav-container">
                         <a href="/">Contacts</a>
                         <a href="/">Statistics</a>
-                        <a href="/HomePage" className="logged-user">{user.name} ${user.coins}</a>
                     </nav>
                 </header>
 
                 <div className="main-container">
-                    <div className="bitcoin-rate-container">
-                        <h2> Current Bitcoin Rate: "{bitcoinRate}"</h2>
+                    <div className="logged-user-container">
+                        <h2>Hello! {user.name}</h2>
+                        <h2>Coins: {user.coins}   </h2>
+                        <h2>BTC: {bitcoinRate}</h2>
                     </div>
                 </div>
             </div>

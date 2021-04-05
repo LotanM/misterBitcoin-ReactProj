@@ -1,0 +1,21 @@
+.contact-page {
+    .contacts-container {
+        .contact-details {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 40rem;
+            margin: 0 auto;
+            max-width: 30rem;
+            padding: 20px 10px;
+            margin-bottom: 30px;
+            background-color: rgb(248, 248, 248);
+            
+            img {
+                width: 200px;
+                margin-bottom: 30px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

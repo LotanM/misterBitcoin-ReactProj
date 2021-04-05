@@ -12,9 +12,9 @@ import { ContactPage } from './pages/ContactPage/ContactPage';
 ReactDOM.render(
   <React.StrictMode>
     <HomePage />
-    <ContactPage/>
+    {/* <ContactPage/>
     <StatisticPage/>
-    <ContactDetailsPage/>
+    <ContactDetailsPage/> */}
     {/* <ContactEditPage/> */}
   </React.StrictMode>,
   document.getElementById('root')

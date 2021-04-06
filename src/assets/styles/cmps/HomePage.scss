@@ -1,13 +1,32 @@
 .home-page {
     .main-container {
-        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
         .logged-user-container {
-            height: 10rem;
-            width: 30rem;
+            padding: 30px;
             text-align: left;
-            margin: 0 auto;
             border-radius: 5px;
             box-shadow: 0px 8px 10px -6px #dfdddd;
+            h1{
+                font-size: 5rem;
+                font-weight: bold;
+                margin-bottom: 3rem;
+                font-family: 'Fira Sans', sans-serif;
+                span {
+                    font-size: 30px;
+                }
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 2rem;
+                img {
+                    margin-right: 1rem;
+                    width: 40px;
+                }
+            }
         }
     }
 }

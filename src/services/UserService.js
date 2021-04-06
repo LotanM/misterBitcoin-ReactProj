@@ -4,7 +4,7 @@ export const UserService = {
 
 
 const user = {
-  name: "Ochoa Hyde",
+  name: "Steve Rogers",
   coins: 100,
   moves: []
 }

@@ -33,9 +33,13 @@ export class HomePage extends Component {
 
                 <div className="main-container">
                     <div className="logged-user-container">
-                        <h2>Hello! {user.name}</h2>
-                        <h2>Coins: {user.coins}   </h2>
-                        <h2>BTC: {bitcoinRate}</h2>
+                        <h1>Hello, <span>{user.name}</span></h1>
+                        <div className="container">
+                        <img src={require('../assets/img/coins.svg').default} alt=""/> <h2>Coins: {user.coins}   </h2>
+                        </div>
+                        <div className="container">
+                        <img src={require('../assets/img/BTC.svg').default} alt=""/> <h2>BTC: {bitcoinRate}</h2>
+                    </div>
                     </div>
                 </div>
             </div>

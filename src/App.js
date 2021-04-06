@@ -1,9 +1,10 @@
 import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
-import { ContactPage } from './pages/ContactPage/ContactPage';
 import { AppHeader } from './components/AppHeader/AppHeader';
-import { ContactDetailsPage } from './pages/ContactDetailsPage/ContactDetailsPage';
+import { ContactPage } from './pages/ContactPage/ContactPage';
+import { StatisticPage } from './pages/StatisticPage/StatisticPage';
 import { ContactEditPage } from './pages/ContactEditPage/ContactEditPage';
+import { ContactDetailsPage } from './pages/ContactDetailsPage/ContactDetailsPage';
 
 export function App() {
 
@@ -19,6 +20,8 @@ export function App() {
           <Route component={ContactEditPage} path='/contact/edit/:id?' />
 
           <Route component={ContactDetailsPage} path='/contact/:id' />
+
+          <Route component={StatisticPage} path='/statistic-page' />
 
           <PrivateRoute component={ContactPage} isAdmin={true} path='/contact-page' />
 

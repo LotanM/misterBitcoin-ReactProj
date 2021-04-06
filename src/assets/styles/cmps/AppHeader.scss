@@ -1,0 +1,21 @@
+.app-header {
+    padding: 0 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(224, 227, 230);
+    .nav-container {
+        .logged-user {
+            color: blue;
+            font-weight: bold;
+        }
+        & > *:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+    img {
+        max-width: 60px;
+    }
+}
+ 

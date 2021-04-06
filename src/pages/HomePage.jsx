@@ -1,10 +1,7 @@
 
 import { Component } from 'react';
-import { UserService } from '../../services/UserService';
-import logo from '../../assets/img/coin.svg';
-import { BitcoinService } from '../../services/BitcoinService';
-import { ContactFilter } from '../../components/ContactFilter/ContactFilter';
-// import contactImg from '../../assets/img/contact.svg'
+import { UserService } from '../services/UserService';
+import { BitcoinService } from '../services/BitcoinService';
 export class HomePage extends Component {
 
     state = {
@@ -27,18 +24,12 @@ export class HomePage extends Component {
         this.setState({ bitcoinRate })
     }
 
+
     render() {
         const { user, bitcoinRate } = this.state
         if (!user || !bitcoinRate) return <div>Loading User.....</div>
         return (
             <div className="home-page">
-                <header className="header-container">
-                    <img src={logo} alt="" />
-                    <nav className="nav-container">
-                        <a href="/">Contacts</a>
-                        <a href="/">Statistics</a>
-                    </nav>
-                </header>
 
                 <div className="main-container">
                     <div className="logged-user-container">
